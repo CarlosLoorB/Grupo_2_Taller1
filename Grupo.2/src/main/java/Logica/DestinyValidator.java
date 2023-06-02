@@ -1,8 +1,8 @@
-package Logica;
+package logica;
 
 import java.util.Scanner;
 
-import Excepciones.InvalidInputException;
+import excepciones.InvalidInputException;
 
 public class DestinyValidator {
 	

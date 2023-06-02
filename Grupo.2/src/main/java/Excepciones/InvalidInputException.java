@@ -1,8 +1,16 @@
-package Excepciones;
+package excepciones;
 
-public class InvalidInputException extends Exception{
+/**
+ * @author CAELOS JR 2018
+ *
+ */
+public class InvalidInputException extends Exception {
 
-	public InvalidInputException(String mensaje){
-		super(mensaje);
-	}
+/**
+ * @param mensaje
+ */
+
+public InvalidInputException(final String mensaje) {
+super(mensaje);
+}
 }

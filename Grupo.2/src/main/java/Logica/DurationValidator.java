@@ -1,23 +1,32 @@
-package Logica;
+package logica;
 
 import java.util.Scanner;
 
-import Excepciones.InvalidInputException;
+import excepciones.InvalidInputException;
 
-public class DurationValidator {
-	
-	public static Integer validarDuracion() throws InvalidInputException {
-		Scanner scanner = new Scanner(System.in);
-		Integer Duracion;
-		try {
-			System.out.println("Caunta dias durara su vacacion: ");
-			Duracion = scanner.nextInt();
-			scanner.nextLine();
-		}
-		catch (Exception e) {
-			throw new InvalidInputException("No es una duracion valida");
-		}
-		return Duracion;
-	}
+public final class DurationValidator {
+
+/**
+ *
+ */
+private DurationValidator() {
+}
+
+/**
+ * @return duracion
+ * @throws InvalidInputException
+ */
+public static Integer validarDuracion() throws InvalidInputException {
+Scanner scanner = new Scanner(System.in);
+Integer duracion;
+try {
+System.out.println("Cuantos dias durara su vacacion: ");
+duracion = scanner.nextInt();
+scanner.nextLine();
+} catch (Exception e) {
+throw new InvalidInputException("Duracion Invalida");
+}
+return duracion;
+}
 
 }

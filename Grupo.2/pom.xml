@@ -23,7 +23,7 @@
 <plugins>
 <plugin>
 <artifactId>maven-checkstyle-plugin</artifactId>
-<configuration> <configLocation>G2 Configuration.xml</configLocation>
+<configuration> <configLocation>G2_Checks.xml</configLocation>
 </configuration>
 </plugin>
 </plugins>

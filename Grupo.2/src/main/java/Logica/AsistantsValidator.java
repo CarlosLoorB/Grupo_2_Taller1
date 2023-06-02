@@ -1,29 +1,46 @@
-package Logica;
+package logica;
 
 import java.util.Scanner;
 
-import Excepciones.InvalidInputException;
+import excepciones.InvalidInputException;
 
-public class AsistantsValidator {
-	
+public final class AsistantsValidator {
+
+	private AsistantsValidator() {
+	}
+
+	/**
+	 *
+	 */
+	private static final int LIMITEASISTENTES = 80;
+
+	/**
+	 * @return Asistentes
+	 * @throws InvalidInputException
+	 */
+
 	public static Integer validarAsistentes() throws InvalidInputException {
 		Scanner scanner = new Scanner(System.in);
-		Integer Asistentes;
+		Integer asistentes;
 		try {
 			System.out.println("Caunta gente asistira vacacion: ");
-			Asistentes = scanner.nextInt();
+			asistentes = scanner.nextInt();
 			scanner.nextLine();
-			ValidarCantidadAsistentes(Asistentes);
+			validarCantidadAsistentes(asistentes);
+			} catch (Exception e) {
+			throw new InvalidInputException("Numero Invalido");
 		}
-		catch (Exception e) {
-			throw new InvalidInputException("No es un numero valido");
-		}
-		return Asistentes;
+		return asistentes;
 	}
-	
-	public static void ValidarCantidadAsistentes(Integer cantidad) throws InvalidInputException {
-		if (cantidad >= 80) {
-			throw new InvalidInputException("Demasiados Asistentes");
+
+	/**
+	 * @param cantidad
+	 * @throws InvalidInputException
+	 */
+	public static void validarCantidadAsistentes(final Integer cantidad)
+			throws InvalidInputException {
+		if (cantidad >= LIMITEASISTENTES) {
+			throw new InvalidInputException("Exceso Asistentes");
 		}
 	}
 
