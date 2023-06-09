@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import excepciones.InvalidInputException;
 
+import java.util.ArrayList;
+
 public final class DurationValidator {
 
     private DurationValidator() {
@@ -14,6 +16,7 @@ public final class DurationValidator {
      * @throws InvalidInputException
      */
     public static Integer validarDuracion() throws InvalidInputException {
+    	
         Scanner scanner = new Scanner(System.in);
         Integer duracion;
         try {

@@ -1,0 +1,4 @@
+src/main/java/logica/AddOnValidator.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.ArrayList'
+src/main/java/logica/AsistantsValidator.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.ArrayList'
+src/main/java/logica/DestinyValidator.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.ArrayList'
+src/main/java/logica/DurationValidator.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.ArrayList'

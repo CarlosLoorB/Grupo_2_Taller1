@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import excepciones.InvalidInputException;
 
+import java.util.ArrayList;
+
 public final class AddOnValidator {
 
     private AddOnValidator() {
