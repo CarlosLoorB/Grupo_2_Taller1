@@ -26,7 +26,7 @@ public final class Menu {
 			// CHECKSTYLE: ON
             System.out.println("Total: $" + vacacion.getPrecio() + added);
         } catch (InvalidInputException ii) {
-           // System.out.println("-1");
+            System.out.println("-1");
             System.out.println(ii.getMessage());
         }
     }
