@@ -7,14 +7,14 @@ import logica.DurationCharge;
 import logica.Vacaciones;
 
 public final class Menu {	
-	private Menu() {
+    private Menu() {
     }
 
     /**
      * Función mostrarMenu
      */
 	
-	public static void mostrarMenu() {
+    public static void mostrarMenu() {
         try {
             Vacaciones vacacion = Elecciones.obtenerOpcion();
 			// CHECKSTYLE: OFF
@@ -22,7 +22,7 @@ public final class Menu {
             vacacion = AsistantsCharge.extraAsistencia(vacacion);
             vacacion = DurationCharge.sobrecargoDuracion(vacacion);
 			// CHECKSTYLE: ON
-            System.out.println("Total: " + vacacion.getPrecio());
+            System.out.println("Total: $" + vacacion.getPrecio());
         } catch (InvalidInputException ii) {
             System.out.println("-1");
             System.out.println(ii.getMessage());
