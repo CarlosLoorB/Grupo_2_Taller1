@@ -83,6 +83,11 @@ public class Vacaciones {
     public double getPrecio() {
         return Precio;
     }
-	
-	
+    
+    /**
+     * @param precio
+     */
+    public void setPrecio(double precio) {
+        Precio = precio;
+    }
 }
