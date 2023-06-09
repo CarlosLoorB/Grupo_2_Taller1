@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import excepciones.InvalidInputException;
 
-import java.util.ArrayList;
 
 public class DestinyValidator {
     
