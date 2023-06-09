@@ -5,6 +5,7 @@ public class Vacaciones {
     Integer Asistentes;
     Integer Duracion;
     double Precio;
+    Integer AddOn;
 
     /**
      * Vacaciones
@@ -89,5 +90,19 @@ public class Vacaciones {
      */
     public void setPrecio(double precio) {
         Precio = precio;
+    }
+    
+    /**
+     * @return AddOn
+     */
+    public Integer getAddOn() {
+        return AddOn;
+    }
+
+	/**
+	 * @param addOn
+	 */
+    public void setAddOn(Integer addOn) {
+        AddOn = addOn;
     }
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd>
+    <useProjectRuleSet>false</useProjectRuleSet>
+    <excludePatterns/>
+    <includePatterns/>
+    <rules>
+        <rule>
+            <name>GenericsNaming</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>LongVariable</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>UnnecessaryCast</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>UnnecessaryConstructor</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>UnnecessaryImport</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>LawOfDemeter</name>
+            <ruleset>Design</ruleset>
+        </rule>
+        <rule>
+            <name>CommentRequired</name>
+            <ruleset>Documentation</ruleset>
+        </rule>
+        <rule>
+            <name>NullAssignment</name>
+            <ruleset>Error Prone</ruleset>
+        </rule>
+    </rules>
+    <includeDerivedFiles>false</includeDerivedFiles>
+    <violationsAsErrors>true</violationsAsErrors>
+    <fullBuildEnabled>true</fullBuildEnabled>
+</pmd>

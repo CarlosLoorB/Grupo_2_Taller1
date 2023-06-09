@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import excepciones.InvalidInputException;
 
+
 public final class AsistantsValidator {
 	
     private AsistantsValidator() {
@@ -24,6 +25,7 @@ public final class AsistantsValidator {
             asistentes = scanner.nextInt();
             scanner.nextLine();
             validarCantidadAsistentes(asistentes);
+            
             
         }catch (Exception e) {
             throw new InvalidInputException("Numero Invalido");
